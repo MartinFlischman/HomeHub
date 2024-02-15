@@ -16,11 +16,18 @@
     </header>
 
     <main>
-        <section id="lighting">
+        <section id="lighting" class="section-with-toggle">
             <h2><i class="fas fa-lightbulb"></i> Lighting</h2>
-            <button id="toggleLight"><i class="fas fa-power-off"></i> Toggle Light</button>
-            <button id="increaseBrightness"><i class="fas fa-sun"></i> Increase Brightness</button>
-            <button id="decreaseBrightness"><i class="fas fa-moon"></i> Decrease Brightness</button>
+            <div class="control-wrapper">
+                <label class="switch">
+                    <input type="checkbox" id="toggleLight">
+                    <span class="slider"></span>
+                </label>
+                <div class="button-wrapper">
+                    <button id="increaseBrightness"><i class="fas fa-plus"></i> Brightness</button>
+                    <button id="decreaseBrightness"><i class="fas fa-minus"></i> Brightness</button>
+                </div>
+            </div>
         </section>
 
         <section id="temperature">
@@ -33,6 +40,7 @@
             <h2><i class="fas fa-music"></i> Music</h2>
             <button id="playMusic"><i class="fas fa-play"></i> Play</button>
             <button id="pauseMusic"><i class="fas fa-pause"></i> Pause</button>
+            <button id="stopMusic"><i class="fas fa-stop"></i> Stop</button>
             <button id="previousSong"><i class="fas fa-step-backward"></i> Previous</button>
             <button id="nextSong"><i class="fas fa-step-forward"></i> Next</button>
         </section>
